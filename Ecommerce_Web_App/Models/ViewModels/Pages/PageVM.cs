@@ -23,9 +23,10 @@ namespace Ecommerce_Web_App.Models.ViewModels.Pages
             HasSidebar = row.HasSidebar;
         }
 
+
+        public int Id { get; set; }
         [Required]
         [StringLength(50, MinimumLength = 3)]
-        public int Id { get; set; }
         public string Title { get; set; }
         public string Slug { get; set; }
         [Required]
